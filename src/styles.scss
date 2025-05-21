@@ -2,6 +2,7 @@ body{
     background-color: #06171E;
 }
 
+//some default features
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,6 +10,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+//Custom scrollbar
 *{
     scrollbar-width: thin;
     scrollbar-color: #FD5B4F #dddddd00;
