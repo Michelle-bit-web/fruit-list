@@ -7,7 +7,7 @@
                 <div>
                     <p><b>Bewertung:</b></p>
                     <div>
-                         @for(count of arrStars; track fruit){
+                         @for(count of arrStars; track count){
                             @switch (true){
                                @case (fruit.stars >= count){
                                     <img src="/img/stars/star.svg" alt="" srcset=""> 
@@ -40,7 +40,7 @@
                            <div><b> No comments available yet.</b></div>
                         }
                     </div>
-                    <div><input type="text"><button><img src="/img/arrow-35-32.png" alt="" srcset=""></button>
+                    <div><input [(ngModel)]="inputData" type="text"><button><img (click)="sendInputData()" src="/img/arrow-35-32.png" alt="" srcset=""></button>
                     </div>
                 </div>
             </div>
